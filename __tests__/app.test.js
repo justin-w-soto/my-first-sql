@@ -28,31 +28,52 @@ describe('app routes', () => {
       return client.end(done);
     });
 
-    test('returns animals', async() => {
+    test('returns friends', async() => {
 
       const expectation = [
         {
-          'id': 1,
-          'name': 'bessie',
-          'cool_factor': 3,
-          'owner_id': 1
+          id: 1,
+          name: 'turkey neck',
+          cool_factor: 3,
         },
         {
-          'id': 2,
-          'name': 'jumpy',
-          'cool_factor': 4,
-          'owner_id': 1
+          id: 2,
+          name: 'crab claw',
+          cool_factor: 4,
         },
         {
-          'id': 3,
-          'name': 'spot',
-          'cool_factor': 10,
-          'owner_id': 1
+          id: 3,
+          name: 'ham fist',
+          cool_factor: 4,
+        },
+      
+        {
+          id: 4,
+          name: 'block head',
+          cool_factor: 10,
+        },
+      
+        {
+          id: 5,
+          name: 'poindexter',
+          cool_factor: 1,
+        },
+      
+        {
+          id: 6,
+          name: 'grandma',
+          cool_factor: 10,
+        },
+      
+        {
+          id: 7,
+          name: 'Gator',
+          cool_factor: 8,
         }
       ];
 
       const data = await fakeRequest(app)
-        .get('/animals')
+        .get('/friends')
         .expect('Content-Type', /json/)
         .expect(200);
 
