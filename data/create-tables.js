@@ -21,8 +21,7 @@ async function run() {
                     id SERIAL PRIMARY KEY NOT NULL,
                     name VARCHAR(512) NOT NULL,
                     cool_factor INTEGER NOT NULL,
-                    cool_haircut INTEGER NOT NULL,
-                   
+                    cool_haircut BOOLEAN NOT NULL
             );
         `);
 

@@ -11,7 +11,7 @@ async function run() {
   try {
     await client.connect();
 
- await Promise.all(
+    await Promise.all(
       usersData.map(user => {
         return client.query(`
                       INSERT INTO users (email, hash)
@@ -29,7 +29,7 @@ async function run() {
                     INSERT INTO friends (name, cool_factor, cool_haircut)
                     VALUES ($1, $2, $3);
                 `,
-        [friend.name, friend.cool_factor]);
+        [friend.name, friend.cool_factor, friend.cool_haircut]);
       })
     );
     
