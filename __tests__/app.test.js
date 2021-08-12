@@ -35,50 +35,56 @@ describe('app routes', () => {
     
           name: 'turkey neck',
           cool_factor: 3,
-          cool_haircut: false
-          
+          cool_haircut: false,
+          id: 1
         },
       
         {
           
           name: 'crab claw',
           cool_factor: 4,
-          cool_haircut: false
+          cool_haircut: false,
+          id: 2
         },
       
         {
          
           name: 'ham fist',
           cool_factor: 4,
-          cool_haircut: false
+          cool_haircut: false,
+          id: 3
         },
       
         {
           
           name: 'block head',
           cool_factor: 10,
-          cool_haircut: false
+          cool_haircut: false,
+          id: 4
         },
       
         {
           
           name: 'poindexter',
           cool_factor: 1,
-          cool_haircut: false
+          cool_haircut: false,
+          id: 5
         },
       
         {
           
           name: 'grandma',
           cool_factor: 10,
-          cool_haircut: true
+          cool_haircut: true,
+          id: 6
         },
       
         {
           
           name: 'Gator',
           cool_factor: 8,
-          cool_haircut: false
+          cool_haircut: false,
+          id: 7
         }
       ];
 
